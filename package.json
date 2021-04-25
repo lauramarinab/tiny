@@ -4,11 +4,34 @@
   "description": "Removes all spaces from a string",
   "license": "MIT",
   "repository": "lauramarinab/tiny",
-  "main": "index.js",
+  "main": "dist/index.js",
   "keywords": [
     "tiny",
     "npm",
     "package",
     "lauramarinab"
-  ]
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "file:../pick-icons/node_modules/react",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "file:../pick-icons/node_modules/react",
+    "react-dom": "^17.0.2"
+  }
 }
